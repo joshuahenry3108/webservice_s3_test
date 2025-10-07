@@ -2,16 +2,9 @@ revolte:
   version: '1.0'
   project: PROJNEW
   appName: s3 app new
-  # config:
-    # codeReview:
-    #   summarize: true
-    #   suggestFixes: true
-    #   commentStyle: Balanced
   env:
     staging:
       branch: main
-      codeReview: false
-      codeQuality: false
       services:
         rid_1:
           type: WEB_SERVICE
@@ -38,8 +31,6 @@ revolte:
             public: true
     qa:
       branch: main
-      codeReview: false
-      codeQuality: false
       services:
         rid_1:
           type: WEB_SERVICE
@@ -67,8 +58,6 @@ revolte:
             public: true
     production:
       branch: main
-      codeReview: false
-      codeQuality: false
       services:
         rid_1:
           type: WEB_SERVICE
@@ -98,8 +87,6 @@ revolte:
             versioningStatus: enabled
             public: true
     preview:
-      codeReview: false
-      codeQuality: false
       services:
         rid_1:
           type: WEB_SERVICE
